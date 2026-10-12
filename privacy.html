@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Règles de confidentialité - Hermes Gmail MCP</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --border: #334155;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      box-sizing: border-box;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 2.5rem;
+      max-width: 720px;
+      width: 100%;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.75rem;
+      color: var(--text);
+    }
+    .date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin: 1.75rem 0 0.75rem;
+    }
+    p, li {
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    ul {
+      padding-left: 1.25rem;
+      margin: 0.5rem 0;
+    }
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+    .highlight-box p {
+      color: var(--text);
+      margin: 0;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .nav-back {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <a href="index.html" class="nav-back">← Retour à l'accueil</a>
+
+    <h1>Règles de confidentialité / Privacy Policy</h1>
+    <div class="date">Dernière mise à jour : 13 octobre 2026</div>
+
+    <p>
+      Cette politique de confidentialité décrit comment l'application <strong>Hermes Gmail MCP</strong> (« l'Application ») collecte, utilise et protège vos informations lors de son utilisation avec les services Google et Gmail.
+    </p>
+
+    <h2>1. Nature de l'application</h2>
+    <p>
+      Hermes Gmail MCP est un connecteur technique basé sur le protocole Model Context Protocol (MCP). Il est conçu pour un usage personnel et privé afin de permettre à l'agent conversationnel Hermes d'accéder aux fonctionnalités de messagerie électronique de l'utilisateur à sa demande explicite.
+    </p>
+
+    <h2>2. Données collectées et accès API Google</h2>
+    <p>
+      L'application utilise l'authentification OAuth 2.0 pour accéder aux données du compte Google de l'utilisateur. Selon les autorisations (scopes) accordées par l'utilisateur, l'Application peut accéder à :
+    </p>
+    <ul>
+      <li>Votre adresse e-mail Google (authentification et identification).</li>
+      <li>Les métadonnées et contenus de vos messages Gmail (lecture des e-mails, recherche, consultation des libellés).</li>
+      <li>La création, modification ou envoi d'e-mails, uniquement lorsque vous en donnez l'ordre à votre agent.</li>
+    </ul>
+
+    <h2>3. Utilisation des données</h2>
+    <p>
+      Les données obtenues via les API Google sont utilisées <strong>exclusivement</strong> pour exécuter les instructions fournies par l'utilisateur à son agent Hermes (par exemple : résumer les messages non lus, préparer un brouillon, rechercher un e-mail spécifique).
+    </p>
+    <p>
+      Aucune donnée n'est utilisée à des fins publicitaires, de ciblage, de profilage commercial ou de revente.
+    </p>
+
+    <div class="highlight-box">
+      <p>
+        <strong>Conformité Google API Services User Data Policy :</strong><br>
+        L'utilisation et le transfert par Hermes Gmail MCP à toute autre application d'informations reçues des API Google respectent les <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Règles relatives aux données utilisateur des services d'API Google (Google API Services User Data Policy)</a>, y compris les exigences d'utilisation limitée (Limited Use requirements).
+      </p>
+    </div>
+
+    <h2>4. Stockage et sécurité des données</h2>
+    <p>
+      Les jetons d'accès et d'actualisation (tokens OAuth) sont stockés localement sur votre propre machine / infrastructure sécurisée. Les données de messagerie ne transitent par aucun serveur tiers et ne sont hébergées sur aucune base de données externe.
+    </p>
+
+    <h2>5. Partage avec des tiers</h2>
+    <p>
+      Aucune donnée utilisateur ni contenu d'e-mail n'est partagé, vendu, loué ou transféré à des tiers.
+    </p>
+
+    <h2>6. Révocation des accès et suppression</h2>
+    <p>
+      Vous pouvez à tout moment révoquer l'accès de l'application à votre compte Google via les paramètres de sécurité de votre compte Google : 
+      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Gérer les autorisations de compte Google</a>.
+      La suppression du jeton local supprime immédiatement tout accès résiduel.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+      Pour toute question relative à cette politique de confidentialité ou au fonctionnement du connecteur, contactez l'administrateur : 
+      <a href="mailto:af.flavien@gmail.com">af.flavien@gmail.com</a>.
+    </p>
+
+    <footer>
+      <span>Contact : <a href="mailto:af.flavien@gmail.com">af.flavien@gmail.com</a></span>
+      <a href="index.html">Accueil</a>
+    </footer>
+  </div>
+</body>
+</html>
